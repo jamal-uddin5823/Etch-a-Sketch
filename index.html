@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Etch a Sketch</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">Etch a sketch</h1><br>
+    <label for="size" id="size-input">
+        Enter pixel number (Default is 16):
+        <input type="text" name="pixel-num" id="pixel-num" value = 16>
+        <button id="submit-num" onclick="getSize()">Select</button>
+        
+    </label><br><br>
+    <label for="color">
+        Color:
+        <input type="color" name="color" id="color" onchange="getColor()">
+    </label><br><br><br>
+    <div id="container"></div>
+    <script src="script.js"></script>
+</body>
+</html>
